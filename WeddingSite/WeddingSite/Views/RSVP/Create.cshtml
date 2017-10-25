@@ -1,0 +1,79 @@
+@model WeddingSite.Models.Entities.RSVP
+
+@{
+    ViewData["Title"] = "RSVP";
+}
+
+<h2>RSVP</h2>
+
+<form asp-action="Create">
+    <div class="col-md-8 col-centered">
+        <div class="form-horizontal">
+            <hr />
+            <br />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                
+                <div class="col-md-8 col-centered">
+                    <label asp-for="Email" class="col-md-4 control-label"></label>
+                    <input asp-for="Email" class="col-md-4 form-control" placeholder="Your email address" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="col-md-8 col-centered">
+                    <label asp-for="FirstName" class="col-md-4 control-label">First Name</label>
+                    <input asp-for="FirstName" class="col-md-4 form-control" placeholder="Your first name" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="col-md-8 col-centered">
+                    <label asp-for="LastName" class="col-md-4 control-label">Last Name</label>
+                    <input asp-for="LastName" class="col-md-4 form-control" placeholder="Your last name" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="col-md-8 col-centered">
+                    <label asp-for="NumAttendees" class="col-md-4 control-label">Number in Party</label>
+                    <input asp-for="NumAttendees" class="col-md-4 form-control" min="0" placeholder="Number of adults, including yourself" />
+                    <span asp-validation-for="NumAttendees" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="col-md-8 col-centered">
+                    <label asp-for="Attendees" class="col-md-4 control-label">Names of Attendees</label>
+                    <textarea col="200" rows="5" asp-for="Attendees" class="col-md-4 form-control" placeholder="The names of all attendees in your party, including yourself. Separate with commas. e.g. 'John Smith, Mike Burton'"></textarea>
+                    <span asp-validation-for="Attendees" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="col-md-8 col-centered">
+                    <label asp-for="Songs" class="col-md-4 control-label">Song Suggestions</label>
+                    <input asp-for="Songs" class="col-md-4 form-control" placeholder="Suggestions for songs at the wedding" />
+                    <span asp-validation-for="Songs" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-3 col-centered">
+                    <input type="submit" value="RSVP" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

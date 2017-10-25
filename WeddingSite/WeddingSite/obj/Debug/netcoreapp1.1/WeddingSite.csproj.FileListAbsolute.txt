@@ -1,0 +1,10 @@
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\bin\Debug\netcoreapp1.1\WeddingSite.deps.json
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\bin\Debug\netcoreapp1.1\WeddingSite.runtimeconfig.json
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\bin\Debug\netcoreapp1.1\WeddingSite.runtimeconfig.dev.json
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\bin\Debug\netcoreapp1.1\WeddingSite.dll
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\bin\Debug\netcoreapp1.1\WeddingSite.pdb
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\obj\Debug\netcoreapp1.1\WeddingSite.csproj.CoreCompileInputs.cache
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\obj\Debug\netcoreapp1.1\WeddingSite.AssemblyInfoInputs.cache
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\obj\Debug\netcoreapp1.1\WeddingSite.AssemblyInfo.cs
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\obj\Debug\netcoreapp1.1\WeddingSite.dll
+C:\Users\adamr_000\Documents\Wedding\WeddingSite\WeddingSite\obj\Debug\netcoreapp1.1\WeddingSite.pdb

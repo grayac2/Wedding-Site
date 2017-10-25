@@ -1,0 +1,61 @@
+@model IEnumerable<WeddingSite.Models.Entities.RSVP>
+
+@{
+    ViewData["Title"] = "Guestlist";
+}
+
+<p>
+    <a asp-action="Create">RSVP Your Party</a>
+</p>
+
+<h2 style="text-align:center;">Guestlist</h2>
+
+
+<div class="col-md-12">
+    <table class="table guestlistTable">
+        <tbody>
+
+            @{
+                List<string> names = new List<string>();
+                string data = "";
+
+                foreach (var item in Model)
+                {
+                    string[] people = item.Attendees.Split(',');
+                    foreach (var name in people)
+                    {
+                        names.Add(name);
+                    }
+                }
+
+                int rows = (names.Count / 4);
+                int rem = names.Count % 4;
+                if (rem != 0)
+                {
+                    rows += 1;
+                }
+
+                int up = 0;
+                for (int y = 0; y < rows; y++)
+                {
+                    data += "<tr>";
+
+                    for (int i = up; i < up+4; i = i + 1)
+                    {
+                        data += "<td>" + names[i] + "</td>";
+                        if (i >= names.Count - 1)
+                        {
+                            break;
+                        }
+                    }
+                    up += 4;
+
+                    data += "</tr>";
+                }
+
+                @Html.Raw(data)
+            }
+
+        </tbody>
+    </table>
+</div>
